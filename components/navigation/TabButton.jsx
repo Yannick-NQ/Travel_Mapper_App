@@ -2,6 +2,7 @@ import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import React, { useEffect, useRef } from 'react';
 import * as Animatable from 'react-native-animatable';
 import Icon from './TabBarIcon';
+import { PRIMARY } from '../../constants/LAYOUT_CONST';
 
 const animate1 = { 0: { scale: 0.8 }, 1: { scale: 1.0 } };
 const animate2 = { 0: { scale: 1.0 }, 1: { scale: 0.8 } };
@@ -41,13 +42,13 @@ const TabButton = (props) => {
               alignItems: 'center',
               justifyContent: 'center',
               borderRadius: 25,
-              backgroundColor: focused ? '#063968' : '#fff',
+              backgroundColor: focused ? PRIMARY.main : '#fff',
             }}
           />
           <Icon
             type={item.type}
             name={item.icon}
-            color={focused ? '#fff' : '#063968'}
+            color={focused ? '#fff' : PRIMARY.main}
           />
         </View>
         <Animatable.Text ref={textRef} style={styles.text}>
@@ -71,6 +72,7 @@ const styles = StyleSheet.create({
     height: 40,
     borderRadius: 25,
     borderWidth: 1,
+    borderColor: PRIMARY.main,
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -78,7 +80,7 @@ const styles = StyleSheet.create({
     // fontFamily: 'medium',
     fontSize: 10,
     textAlign: 'center',
-    color: '#063968',
+    color: PRIMARY.main,
   },
 });
 

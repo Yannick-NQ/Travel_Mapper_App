@@ -1,11 +1,14 @@
-import { View, Text, StyleSheet } from 'react-native'
+import { Text } from 'react-native'
 import React from 'react'
+import Header from '../../components/Header';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const HomeScreen = () => {
     return (
-        <View className='flex-1'>
+        <SafeAreaView className='p-[20px]'>
+            <Header />
             <Text>HomeScreen</Text>
-        </View>
+        </SafeAreaView>
     )
 }
 
