@@ -83,7 +83,12 @@ const LoginScreen = () => {
             springify
             className='w-full'
           >
-            <TouchableOpacity className='w-full bg-sky-500 p-3 rounded-md mb-3'>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.push('Home');
+              }}
+              className='w-full bg-sky-500 p-3 rounded-md mb-3'
+            >
               <Text className='text-lg font-bold text-white text-center'>
                 Ingresar
               </Text>
