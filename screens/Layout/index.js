@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Header from '../../components/Header';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Icons } from '../../components/navigation/TabBarIcon';
@@ -9,6 +9,8 @@ import TabButton from '../../components/navigation/TabButton';
 import HomeScreen from '../HomeScreen';
 import ProfileScreen from '../ProfileScreen';
 import FavScreen from '../FavScreen';
+import { useNavigation } from '@react-navigation/native';
+
 
 const Tab = createBottomTabNavigator();
 
@@ -21,6 +23,15 @@ const TabArr = [
 ];
 
 const LayoutScreen = () => {
+
+    const navigation = useNavigation();
+
+    useEffect(() => {
+        navigation.setOptions({
+            headerShown: false,
+        });
+    }, []);
+
     return (
         <View className='flex-1'>
             <StatusBar style='dark' />
