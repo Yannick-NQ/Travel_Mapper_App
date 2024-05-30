@@ -22,7 +22,7 @@ const HomeScreen = () => {
             <View className="flex-row px-6 mt-12 items-center  space-x-2">
                 <Image source={require('../../assets/images/TravelMapper-logo.png')} className="w-12 h-12 rounded-full" />
                 <View>
-                    <Text className="text-[#d14450] text-2xl font-semibold"> Travel Mapper</Text>
+                    <Text className="text-[#d14450] text-xl font-semibold"> Travel Mapper</Text>
                 </View>
             </View>
 
