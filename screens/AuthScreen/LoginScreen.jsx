@@ -85,7 +85,7 @@ const LoginScreen = () => {
           >
             <TouchableOpacity
               onPress={() => {
-                navigation.push('Home');
+                navigation.push('Layout');
               }}
               className='w-full bg-sky-500 p-3 rounded-md mb-3'
             >
