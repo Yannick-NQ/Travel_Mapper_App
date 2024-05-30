@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    // fontFamily: 'medium',
+    fontFamily: 'medium',
     fontSize: 10,
     textAlign: 'center',
     color: PRIMARY.main,
