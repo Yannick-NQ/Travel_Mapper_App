@@ -1,6 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { HomeScreen, LoginScreen, SignUpScreen, WelcomeScreen, LayoutScreen } from './screens';
+import { LoginScreen, SignUpScreen, WelcomeScreen, LayoutScreen } from './screens';
+import { useFonts } from 'expo-font';
+import { useCallback } from 'react';
 
 const Stack = createNativeStackNavigator();
 
