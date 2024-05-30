@@ -7,6 +7,7 @@ export const SCREEN_WIDTH = Dimensions.get('screen').width;
 
 // SETUP COLORS
 
+// PRIMARY
 const PRIMARY = {
     lighter: "#e2eefe",
     100: "#bae7ff",
@@ -19,6 +20,8 @@ const PRIMARY = {
     darker: "#003a8c",
     900: "#002766",
 };
+
+// SECONDARY
 
 const SECONDARY = {
     lighter: "#fafafa",
@@ -33,6 +36,7 @@ const SECONDARY = {
     darker: "#000000",
 };
 
+// INFO 
 const INFO = {
     lighter: "#D0F2FF",
     light: "#74CAFF",
@@ -40,6 +44,8 @@ const INFO = {
     dark: "#0C53B7",
     darker: "#04297A",
 };
+
+// SUCCESS
 const SUCCESS = {
     lighter: "#f6ffed",
     light: "#95de64",
@@ -47,6 +53,8 @@ const SUCCESS = {
     dark: "#237804",
     darker: "#092b00",
 };
+
+// WARNING
 const WARNING = {
     lighter: "#fffbe6",
     light: "#ffd666",
@@ -54,6 +62,8 @@ const WARNING = {
     dark: "#ad6800",
     darker: "#613400",
 };
+
+// ERROR
 const ERROR = {
     lighter: "#fff1f0",
     light: "#ff7875",
@@ -61,6 +71,8 @@ const ERROR = {
     dark: "#a8071a",
     darker: "#5c0011",
 };
+
+// GREY
 
 const GREY = {
     0: "#FFFFFF",
@@ -75,4 +87,4 @@ const GREY = {
     900: "#161C24",
 };
 
-export { PRIMARY, SECONDARY, INFO, SUCCESS, WARNING, ERROR };
+export { PRIMARY, SECONDARY, INFO, SUCCESS, WARNING, ERROR, GREY };
