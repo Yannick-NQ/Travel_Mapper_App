@@ -5,6 +5,25 @@ import { HomeScreen, LoginScreen, SignUpScreen, WelcomeScreen, LayoutScreen } fr
 const Stack = createNativeStackNavigator();
 
 export default function App() {
+
+  const [fontsLoaded] = useFonts({
+    xtrabold: require('./assets/fonts/Poppins-ExtraBold.ttf'),
+    bold: require('./assets/fonts/Poppins-Bold.ttf'),
+    regular: require('./assets/fonts/Poppins-Regular.ttf'),
+    medium: require('./assets/fonts/Poppins-Medium.ttf'),
+    light: require('./assets/fonts/Poppins-Light.ttf'),
+  });
+
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <NavigationContainer>
       <Stack.Navigator>
