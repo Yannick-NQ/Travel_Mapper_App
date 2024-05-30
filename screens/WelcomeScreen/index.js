@@ -31,8 +31,7 @@ const HomeScreen = () => {
                 <Text className="text-blue-900 text-[32px] font-semibold">Disfruta el viaje</Text>
                 <Text className="text-sky-400 text-[30px] font-bold">con buenos momentos</Text>
                 <Text className="text-[#3C6072] text-base">
-                    Descubre el mundo de una manera única y emocionante. Inspírate, explora y vive experiencias inolvidables. ¡El viaje de tus sueños comienza aquí!
-                </Text>
+                Descubre tu ciudad y llega a la universidad con facilidad. Explora las rutas de los autobuses universitarios, encuentra el camino más rápido y nunca pierdas un viaje. ¡Tu jornada comienza aquí!</Text>
             </View>
 
             {/* Circle Section */}

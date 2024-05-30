@@ -1,12 +1,13 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
 
-const MapScreen = () => {
+const MapScreen = ({ placeList }) => {
+
     return (
-        <View>
-            <Text>MapScreen</Text>
+        <View style={{ marginTop: 20 }}>
+            <Text> MapScreen</Text>
+
         </View>
-    )
+    );
 }
 
 export default MapScreen;
