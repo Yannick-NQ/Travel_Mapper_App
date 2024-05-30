@@ -7,12 +7,17 @@ import MapScreen from '../MapScreen';
 import { StatusBar } from 'expo-status-bar';
 import TabButton from '../../components/navigation/TabButton';
 import HomeScreen from '../HomeScreen';
+import ProfileScreen from '../ProfileScreen';
+import FavScreen from '../FavScreen';
 
 const Tab = createBottomTabNavigator();
 
 const TabArr = [
     { route: 'Home', label: 'Inicio', type: Icons.Feather, icon: 'home', component: HomeScreen },
-    { route: 'Map', label: 'Mapa', type: Icons.Fontisto, icon: 'hipchat', component: MapScreen },
+    { route: 'Map', label: 'Explorar', type: Icons.Feather, icon: 'map', component: MapScreen },
+    { route: 'Favorite', label: 'Favoritos', type: Icons.Ionicons, icon: 'heart-outline', component: FavScreen },
+    { route: 'Profile', label: 'Perfil', type: Icons.FontAwesome, icon: 'user-circle-o', component: ProfileScreen },
+
 ];
 
 const LayoutScreen = () => {
