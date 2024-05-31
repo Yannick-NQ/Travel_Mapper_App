@@ -2,14 +2,14 @@ import { View, Text } from 'react-native';
 import React from 'react';
 import { Image } from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
-import { WARNING } from '../../constants/LAYOUT_CONST';
+import { GREY, WARNING } from '../../constants/LAYOUT_CONST';
 
 export default function BusinessItem({ place }) {
   return (
     <View
       style={{
         width: 140,
-        backgroundColor: Colors.WHITE,
+        backgroundColor: GREY[0],
         borderRadius: 10,
         padding: 10,
         margin: 5,
@@ -24,7 +24,7 @@ export default function BusinessItem({ place }) {
               '?maxwidth=400' +
               '&photo_reference=' +
               place?.photos[0]?.photo_reference +
-              '&key=AIzaSyApZVDndrveWic7_bTXdHaxiD5j7Xt_VOYs',
+              '&key=AIzaSyAiBt1CyXKr6ocPjjFbmkdyiag_5xelNbM',
           }}
           style={{ width: 120, height: 80, borderRadius: 10 }}
         />
@@ -46,7 +46,7 @@ export default function BusinessItem({ place }) {
           fontFamily: 'raleway',
           fontSize: 13,
           marginTop: 5,
-          color: Colors.DARK_GRAY,
+          color: GREY[700],
         }}
       >
         {place.vicinity ? place.vicinity : place.formatted_address}

@@ -22,7 +22,7 @@ export default function PlaceItem({ place }) {
               '?maxwidth=400' +
               '&photo_reference=' +
               place?.photos[0]?.photo_reference +
-              '&key=AIzaSyApZVDndrveWic7_bTXdHaxiD5j7Xt_VOYs',
+              '&key=AIzaSyAiBt1CyXKr6ocPjjFbmkdyiag_5xelNbM',
           }}
           style={{ width: 110, height: 110, borderRadius: 15 }}
         />
