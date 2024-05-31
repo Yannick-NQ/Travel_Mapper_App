@@ -2,6 +2,7 @@ import { View, Text, Dimensions } from 'react-native';
 import React, { useContext, useEffect, useState } from 'react';
 import { UserLocationContext } from '../../contextos/UserLocationContext';
 import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
+import PlaceMarker from './PlaceMarker';
 
 const GoogleMapView = ({ placeList }) => {
   const [mapRegion, setmapRegion] = useState([]);
